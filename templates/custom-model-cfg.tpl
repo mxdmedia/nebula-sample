@@ -64,30 +64,30 @@ CustomModel  "{{ model.name }}"
 	Gas_volume_height 1
 	gas_scattering_factor 0.025
 	gas_density_factor 0.1
-	Emission_gas_1 true
+	Emission_gas_1 {{ model.emission_gas_1 }}
 	//Emission_gas_1_external true
-	Nebula_emission_color_1 (0.852 0.24270730724502898 0.06)
-	Emission_gas_1_direction (0 0 1)
-	Emission_gas_1_coef_0 (0 0 0)
-	Emission_gas_1_coef_1 0.371901
-	Emission_gas_1_coef_2 3.058
-	Emission_gas_1_coef_3 1.23967
-	Emission_gas_2 true
+	Nebula_emission_color_1 ({{ model.nebula_emission_color_1|join(' ') }})
+	Emission_gas_1_direction ({{ model.emission_gas_1_direction|join(' ') }})
+	Emission_gas_1_coef_0 ({{ model.emission_gas_1_coef_0|join(' ') }})
+	Emission_gas_1_coef_1 {{ model.emission_gas_1_coef_1 }}
+	Emission_gas_1_coef_2 {{ model.emission_gas_1_coef_2 }}
+	Emission_gas_1_coef_3 {{ model.emission_gas_1_coef_3 }}
+	Emission_gas_2 {{ model.emission_gas_2 }}
 	//Emission_gas_2_external false
-	Nebula_emission_color_2 (0.625 0.20850354608761998 0.186)
-	Emission_gas_2_direction (0 1 0)
-	Emission_gas_2_coef_0 (0 1.03306 0)
-	Emission_gas_2_coef_1 0.5868
-	Emission_gas_2_coef_2 1.074
-	Emission_gas_2_coef_3 1.57
-	Emission_gas_3 true
+	Nebula_emission_color_2 ({{ model.nebula_emission_color_2|join(' ') }})
+	Emission_gas_2_direction ({{ model.emission_gas_2_direction|join(' ') }})
+	Emission_gas_2_coef_0 ({{ model.emission_gas_2_coef_0|join(' ') }})
+	Emission_gas_2_coef_1 {{ model.emission_gas_2_coef_1 }}
+	Emission_gas_2_coef_2 {{ model.emission_gas_2_coef_2 }}
+	Emission_gas_2_coef_3 {{ model.emission_gas_2_coef_3 }}
+	Emission_gas_3 {{ model.emission_gas_3 }}
 	//Emission_gas_3_external false
-	Nebula_emission_color_3 (0.067 0.2764083005934244 0.613)
-	Emission_gas_3_direction (0 1 0)
-	Emission_gas_3_coef_0 (0 0 0.5)
-	Emission_gas_3_coef_1 0.380165
-	Emission_gas_3_coef_2 0.8391283257324944
-	Emission_gas_3_coef_3 1.4643548275935205
+	Nebula_emission_color_3 ({{ model.nebula_emission_color_3|join(' ') }})
+	Emission_gas_3_direction ({{ model.emission_gas_3_direction|join(' ') }})
+	Emission_gas_3_coef_0 ({{ model.emission_gas_3_coef_0|join(' ') }})
+	Emission_gas_3_coef_1 {{ model.emission_gas_3_coef_1 }}
+	Emission_gas_3_coef_2 {{ model.emission_gas_3_coef_2 }}
+	Emission_gas_3_coef_3 {{ model.emission_gas_3_coef_3 }}
 
 	Emission_intensivity_coef 80
 
